@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Router Auth
+Route::get('/login','ConnectController@getLogin')->name('login');
+Route::get('/registro','ConnectController@getRegister')->name('registro');
