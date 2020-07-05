@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +17,9 @@ Route::get('/', function () {
 });
 
 //Router Auth
-Route::get('/login','ConnectController@getLogin')->name('login');
-Route::get('/registro','ConnectController@getRegister')->name('registro');
+Route::get('/login','ConnectController@getLogin')->name('login.view');
+Route::post('/login','ConnectController@postLogin')->name('login.start');
+Route::get('/registro','ConnectController@getRegister')->name('registro.view');
+Route::post('/register','ConnectController@postRegister')->name('register.store');
+Route::post('/logout', 'ConnectController@logout')->name('logout');
+
