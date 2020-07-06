@@ -1,6 +1,7 @@
 <?php
 
 
-Route::get('/admin', function(){
- return 'hola';
+
+Route::group(['prefix' => 'admin','namespace'=>'Admin'], function () {
+    Route::get('/','DashboardController@getDashboard');
 });
