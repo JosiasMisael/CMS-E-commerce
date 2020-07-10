@@ -47,7 +47,7 @@ class ConnectController extends Controller
     public function PostRegister(UserCreateRequest $request)
     {
          $request->validated();
-         $user = User::create([
+          User::create([
           'name'=>$request->name,
           'last_name'=>$request->last_name,
           'email'=> $request->email,

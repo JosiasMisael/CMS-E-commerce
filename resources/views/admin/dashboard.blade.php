@@ -2,5 +2,15 @@
 @section('title','Dashboard')
 
 @section('contenido')
- <h1>Helloo</h1>
+ <div class="container-fluid">
+     <div class="panel shadow">
+         <div class="header">
+          <h2 class="title">Titulo</h2>
+         </div>
+         <div class="body">
+             <h4>See</h4>
+         </div>
+
+     </div>
+ </div>
 @endsection

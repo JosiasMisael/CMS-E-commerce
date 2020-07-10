@@ -23,10 +23,13 @@
                 <a href="{{ route('inicio') }}"><i class="fas fa-house-user"></i>Dashboard</a>
             </li>
             <li>
-                <a href="{{ url('/admin/products') }}"><i class="fab fa-product-hunt"></i></i>Productos</a>
+                <a href="{{  route('category.index', 0) }}"><i class="fas fa-folder-open"></i>Categorias</a>
             </li>
             <li>
-                <a href="{{ url('/adm/users') }}"><i class="fas fa-users"></i>Usuarios</a>
+                <a href="{{  route('product.index') }}"><i class="fas fa-boxes"></i>Productos</a>
+            </li>
+            <li>
+                <a href="{{ route('user.index') }}"><i class="fas fa-users"></i>Usuarios</a>
             </li>
         </ul>
     </div>
